@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Top from './components/Top/Top';
 import Sidebar from './components/Sidebar/Sidebar';
 import Container from './components/Container/Container';
 
 class App extends Component {
 
-  state = { content:"home"}
+  state = { content:"Home", user: "User"}
 
-  updateState = (x) => {
+  updateState = (newState) => {
     
-    this.setState({ content:x});
+    this.setState({ content:newState});
+       
+  }
+  loginUser = (newUser) => {
+    
+    this.setState({ user:newUser});
+
        
   }
 
@@ -18,11 +25,13 @@ class App extends Component {
     console.log(this.state);
 
     return (
+      <Router>
       <div >
        <Top />
        <Sidebar changeContent = {this.updateState.bind(this) }  />
-       <Container content = {this.state.content} />
+       <Container login = {this.loginUser.bind(this)} content = {this.state.content} user = {this.state.user} />
       </div>
+      </Router>
     );
   }
 }

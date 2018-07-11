@@ -13,8 +13,10 @@ p {
     color:grey;;
     margin-top:15px;
     cursor: pointer;
+    text-decoration: none;
     
 }
 p:hover {
     color:#ffb300;
 }
+

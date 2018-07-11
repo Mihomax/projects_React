@@ -8,7 +8,7 @@ const topStyle = {
   };
   
   const top = () => {
-    return <div style={topStyle}><img src = {dash} height="45"/></div>;
+    return <div style={topStyle}><img alt= "Logo" src = {dash} height="45"/></div>;
   }
 
   export default top;
