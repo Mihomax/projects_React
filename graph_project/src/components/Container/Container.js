@@ -73,43 +73,4 @@ class Container extends Component {
       
   export default Container;
 
-  // render() {
   
-  //   if (this.props.content === "Home" && this.props.user === "User") {
-  //     return (<Router>
-  //       <div className = "container">
-  //         <Route path="/" exact render={
-  //           () => {
-  //             return (<form id = "myForm" onSubmit={this.handleSubmit}>
-  //                       <input className = "typefields" value={this.state.value} onChange={this.handleChange} type="email" name="email" placeholder="Email" /><br />
-  //                       <input className = "typefields" type="password" name="password" placeholder="Password" /><br />
-  //                       <input type="submit"  id = "loginButton"   value="Login" />
-  //                   </form>);
-  //           }
-  //         }/>
-  //             </div>
-  //             </Router>);
-  //   }
-  //   else if (this.props.content === "Home" && this.props.user !== "User") {
-  //     return (<Router>
-  //       <div className = "container">
-  //       <Route path="/home" exact render={
-  //           () => {
-  //             return (
-  //              <h1>Hello  user - {this.props.user}  , how is going?</h1>);
-  //             }
-  //           }/>
-  //               </div>
-  //             </Router>);
-  //   }
-  //   else if (this.props.content === "Users") {
-  //     return (<Router>
-  //       <div className = "container">
-  //       <Route path="/users" exact render={
-  //           () => {
-  //             return (<h1>This is Users's section  !</h1>);
-  //           }
-  //         }/>
-  //             </div>
-  //           </Router>);
-   // }
