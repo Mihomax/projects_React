@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom:1px solid lightgrey;
+}
+
+h4 {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+h5 {
+   
+    color:#EA4335;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+span {
+    font-size:130%;
+}
+
+a {
+    text-decoration: none;
+    color:#4285F4;
+}
+

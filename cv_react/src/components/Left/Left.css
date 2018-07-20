@@ -1,0 +1,110 @@
+.left {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    color:#424242 ;
+    width:250px;
+    height:800px;
+    float:left;
+    border-right:1px solid lightgrey;
+    font-size: 125%;
+    
+}
+.label {
+    color:red;
+}
+
+img {
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    padding:40px;
+}
+
+h4 {text-align: center;}
+
+p { 
+    text-align: center;
+    font-size:63%;
+    margin: 0 auto;
+}
+
+.tel { font-size:82%;}
+.email { font-size:70%;}
+.languages {font-size:85%;}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #34A853;
+    border: 1px solid #bdbdbd;
+    border-radius:3px;
+    height:40px;
+    width:140px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    color:white;
+    font-size:90%;
+   
+}
+button:hover {
+    background-color: #4285F4;
+    color:white;
+}
+
+@media only screen and (max-width: 830px) {
+    .left {
+        
+        width:100%;
+        height:220px;
+        float:left;
+        border:none;
+        border-bottom:1px solid lightgrey;
+        font-size: 110%;
+        
+    }
+    img { 
+        float:left;
+        padding:20px;
+    }
+    .contact {
+        float:left;
+        
+    }
+    .langDiv {
+        float:left;
+        margin-top:50px;
+        
+    }
+    p {text-align: left;}
+    h4 {text-align: left;}
+
+    .languages {
+        font-size:65%;
+        margin-top:-20px;
+    }
+    #positiveBtn {
+        margin-top:-15px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    img { 
+        float:left;
+        padding:20px;
+        width:100px;
+    height:100px;
+    }
+    button {
+       
+        height:25px;
+        width:100px;
+        cursor: pointer;
+        font-family: 'Arial', sans-serif;
+        color:white;
+        font-size:65%;
+       
+    }
+   
+  }

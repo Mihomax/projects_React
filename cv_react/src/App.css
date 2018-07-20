@@ -1,0 +1,29 @@
+.App {
+    width:80%;
+    min-height:800px;
+    margin-left:10%;
+    position: absolute;
+    box-shadow: 3px 3px lightgrey;
+    background-color: white;
+}
+
+.blurred {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.show {
+    display:block;
+}
+
+.hide {
+    display:none;
+}
+
+@media only screen and (max-width: 1350px) {
+    .App {
+        width:100%;
+        margin-left:0;
+    }
+}
+

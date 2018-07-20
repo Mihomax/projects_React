@@ -1,0 +1,84 @@
+nav {
+    float:left;
+    width:800px;
+    height: 100px;
+   
+}
+
+.linkContainer {
+    margin: 0 auto;
+    margin-top:15px;
+    width:600px;
+    color:#424242 ;
+   
+    
+}
+
+.links {
+    
+    text-decoration: none;
+    color:#424242 ;
+    font-family: 'Roboto', sans-serif;
+    margin:30px;
+    font-size:130%;
+    border-bottom: 3px solid lightgrey;
+    
+}
+
+.links:hover{
+    text-shadow: 1px 1px 2px #424242;
+}
+
+.material-icons {
+    font-size:60px;
+    
+}
+
+.home {
+    color:#34A853;
+    
+    
+}
+.work {
+    color:#FBBC05;
+}
+.school {
+    color:#EA4335;
+}
+
+.face {
+    color:#4285F4;
+}
+.mood {
+    color:#34A853;
+}
+
+@media only screen and (max-width: 1100px) {
+    nav {
+        width:550px;
+    }
+    .linkContainer {
+        width:500px;
+        
+    }
+    .links {
+
+        margin:20px;
+        font-size:120%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        width:370px;
+    }
+    .linkContainer {
+        width:370px;
+        
+    }
+    .links {
+
+        margin:5px;
+        font-size:100%;
+    }
+}
