@@ -1,14 +1,9 @@
 import React from 'react';
 
 const positive = () => (
-<div >
-<h1>This is even more fun !</h1>
-        <div className = "main">
-        <h3>Sorry ... this page is not done yet</h3>
-        <br /> 
-        </div> 
-       
-</div>
+<h1>This page is not ready yet, sorry ...</h1>
+        
+
 );
 export default positive;
 

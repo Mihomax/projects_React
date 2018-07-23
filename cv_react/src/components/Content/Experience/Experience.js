@@ -15,7 +15,7 @@ const experience = () => {
         <h1>Welcome to my job experience page !</h1><br /><br /><br />
         
         <div className = "main">
-        <img class="logos" src={howden}alt='Howden' />
+        <img className="logos" src={howden}alt='Howden' />
         <h3 className = "lastline">Junior Web Developer (Internship) <span className ="date">05/2018 - 07/2018</span><br /> Howden Simsmart - Brossard, QC</h3><br/>
         <h4>- Create effective strategies in order to integrate existing software into web </h4> 
         <h4>- Develop a single page, responsive web application, responding to client needs</h4>
@@ -23,7 +23,7 @@ const experience = () => {
         <br /> <br /> <br /> 
         </div>
         <div className = "main">
-        <img class="logos" src={invue} alt='Invue' />
+        <img className="logos" src={invue} alt='Invue' />
         <h3 className = "lastline">QA Tester <span className ="date">01/2018 - 06/2018</span><br />  InVue - Montreal, QC<br /></h3>
         <h4> - Collaborate with developers to create effective strategies and test plans </h4> 
         <h4>- Develop and execute automated tests with Selenium JS</h4>
@@ -33,7 +33,7 @@ const experience = () => {
         <br /> 
         </div>    
         <div className = "main final">
-        <img class="logos" src={ujan} alt='Ujan' />
+        <img className="logos" src={ujan} alt='Ujan' />
         <h3 className = "lastline">        Web Content Integrator <span className ="date">2016- 2017</span><br />  Ujan Projects - Yerevan, Armenia<br /></h3>
         <h4>- Maintain the web platform by adding, updating and deleting content</h4> 
         <h4>- Improve user interface design and optimize usability </h4>
@@ -57,7 +57,7 @@ const experience = () => {
         </div>
        
         <div className = "main"><br />
-        <img class="logos" src={howden}alt='Howden' />
+        <img className="logos" src={howden}alt='Howden' />
         <h3 className = "lastline">Howden Simsmart<span className ="date">2018</span></h3>
         <h4 className = "lastline">- Development of web version of  ’fan management system’ software for the mining sector. 
                 User controls all the fan parameters (speed, mode, frequency etc) online.</h4> <br />
@@ -68,7 +68,7 @@ const experience = () => {
         </div>  
        
         <div className = "main final"><br />
-        <img class="logos" src={ahuntsic} alt='Ahuntsic College' />
+        <img className="logos" src={ahuntsic} alt='Ahuntsic College' />
         <h3 className = "lastline">Ahuntsic College<span className ="date">2018</span></h3>
         <h4>- Development and design of retro video games portal. Users can register, connect, upload and </h4>
         <h4>download games, participate in discussions by writing messages. All the operations are controlled by admin.</h4> 

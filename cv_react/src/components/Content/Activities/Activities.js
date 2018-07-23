@@ -11,10 +11,10 @@ const activities = () => {
         <div className = "main final">
         <h3 className = "lastline"><span style={labelStyle}>Who am I ?</ span> <br /> 
         I am a guy who is passionate about web development (and technology itself) <br />
-        and who is right now open to job offers or freelance projects in order give life to ambitious ideas ! </h3>
+        and who is right now open to job offers or freelance projects in order to give life to ambitious ideas ! </h3>
 
         <h3 className = "lastline"><span style={labelStyle}>Who am I as a person ? </ span> <br /> 
-        I think my previous collegues or bosses would describe me as organised, fast learner, analytical 
+        I think my previous colleagues or supervisors would describe me as organised, fast learner, analytical 
         and reliable team player. </h3>
 
         <h3 className = "lastline"><span style={labelStyle}>Who am I out of work ? </ span> <br /> 

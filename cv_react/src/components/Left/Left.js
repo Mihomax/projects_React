@@ -11,7 +11,7 @@ const labelStyle = {fontWeight:"lighter", color:"#9e9e9e"}
         return (
         <div className = "left">
         
-                <img class="myphoto"alt="MyPhoto"src ={me} />
+                <img className="myphoto"alt="MyPhoto"src ={me} />
                 
            <div className = "contact">
            <p className = "name">Hi, I am Hovhannes.<br/> Welcome to my ineractive profile !</p>
