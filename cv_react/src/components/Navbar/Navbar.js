@@ -5,16 +5,19 @@ import './Navbar.css';
 
 
 
-const navbar = () => (
-    <nav >
+const navbar = () => {
+
+    const underlined = {borderBottom: "3px solid #4285F4"};
+    const changeUnderline = 
+   return ( <nav >
         <div className = "linkContainer">
-        <Link className = "links home" to={'/'}><i className="material-icons ">home</i></Link>
+        <Link onClick= {changeUnderline("home")}style = {underlined} className = "links home" to={'/'}><i className="material-icons ">home</i></Link>
         <Link className = "links work" to={'/experience'}><i className="material-icons ">work</i></Link>
         <Link className = "links school" to={'/education'}><i className="material-icons ">school</i></Link>      
         <Link className = "links face" to={'/activities'}><i className="material-icons ">face</i></Link>      
         <Link className = "links mood" to={'/positive'}><i className="material-icons ">mood</i></Link>      
         </div>
     </nav>
-);
+);}
 
 export default navbar;

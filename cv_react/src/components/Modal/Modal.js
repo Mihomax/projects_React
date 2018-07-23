@@ -25,8 +25,8 @@ class Modal extends Component {
         let random = Math.floor(Math.random() * this.props.content.length);
         return (
     <div className = "myModal">
-        <h4>Your daily portion of positive !</h4>
-        <h3>{this.props.content[random].message}</h3>
+        <h4 className = "title">Your daily portion of positive !</h4>
+        <h3 className = "message">{this.props.content[random].message}</h3>
         <button className="btn1" onClick={this.closeFunction}>Continue surfing</button>
         <button className="btn2"onClick={this.showMore}>One more positive </button>
 </div>

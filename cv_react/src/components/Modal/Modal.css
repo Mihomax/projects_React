@@ -14,11 +14,18 @@
     color:#424242;
 }
 
-h3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+
+.message {
+    margin-top:25px;
+    width:500px;
+    margin-left: 50px;
+   
+    
+  }
+  .title {
+    width:260px;
+    margin-left: 170px;
+    padding-top:20px;
   }
 
   .btn1, .btn2 {
@@ -41,10 +48,10 @@ h3 {
 @media only screen and (max-width: 600px) {
     .myModal {
         position: fixed;
-        width: 350px;
+        width: 320px;
         height: 150px;
         top: 40%;
-        left: 45%;
+        left: 48%;
         margin-top: -50px; 
         margin-left: -160px; 
         border-radius:5px;
@@ -55,14 +62,19 @@ h3 {
         color:#424242;
     }
     
-    h2 {
-        font-size:90%;
+    .message {
+        margin-top:20px;
+        width:300px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size:95%;
+        
       }
-    h3 {
-        font-size:100%;
-      }
-      h4 {
-          text-align: center;
+      .title {
+          font-size:85%;
+        width:220px;
+        margin-left: 60px;
+        padding-top:10px;
       }
       .btn1, .btn2 {
         display:inline;

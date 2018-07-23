@@ -1,4 +1,5 @@
 .left {
+    position:fixed;
     font-family: 'Open Sans', sans-serif;
     font-weight:bold;
     color:#424242 ;
@@ -7,13 +8,14 @@
     float:left;
     border-right:1px solid lightgrey;
     font-size: 125%;
-    
+    background-color:#fafafa;
+    box-shadow: 2px 2px 4px lightgrey;
 }
 .label {
     color:red;
 }
 
-img {
+.myphoto {
     border-radius: 50%;
     width:150px;
     height:150px;
@@ -27,10 +29,14 @@ p {
     font-size:63%;
     margin: 0 auto;
 }
+.name { 
+    font-size:90%;
+    margin-bottom:10px;
 
+}
 .tel { font-size:82%;}
 .email { font-size:70%;}
-.languages {font-size:85%;}
+
 
 button {
     display: block;
@@ -56,14 +62,14 @@ button:hover {
     .left {
         
         width:100%;
-        height:220px;
+        height:225px;
         float:left;
         border:none;
         border-bottom:1px solid lightgrey;
         font-size: 110%;
         
     }
-    img { 
+    .myphoto { 
         float:left;
         padding:20px;
     }
@@ -79,22 +85,36 @@ button:hover {
     p {text-align: left;}
     h4 {text-align: left;}
 
-    .languages {
-        font-size:65%;
-        margin-top:-20px;
-    }
+    
     #positiveBtn {
         margin-top:-15px;
     }
   }
 
   @media only screen and (max-width: 600px) {
+
+    .left {
+        
+       
+        height:140px;
+       
+        
+    }
     
-    img { 
+    .myphoto { 
         float:left;
-        padding:20px;
-        width:100px;
-    height:100px;
+        padding:10px;
+        width:90px;
+        height:90px;
+        
+    }
+
+    .name {
+        font-size:70%;
+        margin-bottom:0px;
+    }
+    .email,.tel, .linkedin {
+        font-size:60%;
     }
     button {
        
