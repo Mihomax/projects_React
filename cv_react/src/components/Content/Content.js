@@ -4,8 +4,8 @@ import './Content.css';
 import Home from './Home/Home';
 import Experience from './Experience/Experience';
 import Education from './Education/Education';
-import Activities from './Activities/Activities';
-import Positive from './Positive/Positive';
+import Aboutme from './Aboutme/Aboutme';
+import Projects from './Projects/Projects';
 
 
 class Content extends Component {
@@ -17,8 +17,8 @@ class Content extends Component {
                         <Route path="/" exact component={Home}  />
                         <Route path="/experience" exact component={Experience}  />
                         <Route path="/education" exact component={Education}  />
-                        <Route path="/activities" exact component={Activities}  />
-                        <Route path="/positive" exact component={Positive}  />
+                        <Route path="/aboutme" exact component={Aboutme}  />
+                        <Route path="/projects" exact component={Projects}  />
                 </div>
         );
   }

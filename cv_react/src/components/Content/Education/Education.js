@@ -7,7 +7,7 @@ import seua from '../../../images/seua.png';
 
 const education = () => (
 <div >
-        <h1>Engineering background and recent IT update</h1><br /><br />
+        <h1>I have engineering background and recent IT update !</h1><br /><br />
         <div className = "main educ">
         <img className="logos big" src={ahuntsic} alt='Ahuntsic College' />
 
