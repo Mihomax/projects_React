@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 import Route from 'react-router-dom/Route';
-import './Container.css';
+import classes from './Container.css';
+import Home from './Home/Home';
+import Users from './Users/Users';
+import Datasources from './Datasources/Datasources';
+import Queries from './Queries/Queries';
+import Dashboards from './Dashboards/Dashboards';
+import Config from './Config/Config';
 
 class Container extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {loggedin: false};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,55 +28,26 @@ class Container extends Component {
   }
 
   render() {
-  
-      if (this.props.content === "Home" && this.props.user === "User") {
-        return (<Route path="/" exact render={
-                    () => {
-            return (<div className = "container">
-                  <form id = "myForm" onSubmit={this.handleSubmit}>
-                      <input className = "typefields" value={this.state.value} onChange={this.handleChange} type="email" name="email" placeholder="Email" /><br />
-                      <input className = "typefields" type="password" name="password" placeholder="Password" /><br />
-                      <input type="submit"  id = "loginButton"   value="Login" />
-                  </form>
-                </div>);
+            
+          return (
+                    <div className={classes.Container}>
+                        <Route path="/" exact component={Home}  />
+                        <Route path="/users" exact component={Users}  />
+                        <Route path="/datasources" exact component={Datasources}  />
+                        <Route path="/queries" exact component={Queries}  />
+                        <Route path="/dashboards" exact component={Dashboards}  />
+                        <Route path="/config" exact component={Config}  />
+                    </div>
+                    
+                    );
                 }
                 
-                }/>);
+                
       }
-      else if (this.props.content === "Home" && this.props.user !== "User") {
-        return (<Route path="/home" exact render={
-          () => {
-            return (<div className = "container">
-                 <h1>Hello  user - {this.props.user}  , how is going?</h1>
-                </div>);
-                }
-                }/>);
-      }
-      else if (this.props.content === "Users") {
-        return (<Route path="/users" exact render={() => {
-            return (<div className = "container">
-                 <h1>This is Users's section  !</h1>
-                </div>)}
-                }/>);
-      }
-      else if (this.props.content === "Datasources") {
-        return (<div className = "container">
-                 <h1>These are Datasources  !</h1>
-                </div>)
-      }
-      else if (this.props.content === "Queries") {
-        return (<div className = "container">
-                 <h1>These are Queries  !</h1>
-                </div>)
-      }
-      else if (this.props.content === "Dashboards") {
-        return (<div className = "container">
-                 <h1>This is Dashboard section  !</h1>
-                </div>)
-      }
-  }
-}
+      
       
   export default Container;
+
+  
 
   

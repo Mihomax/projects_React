@@ -1,0 +1,12 @@
+.Layout {
+    display:grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr ;
+}
+
+.Sidebar {
+   border-right:1px solid lightgrey;
+}
+.Main {
+    
+}

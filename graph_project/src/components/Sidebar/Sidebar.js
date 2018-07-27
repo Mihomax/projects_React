@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Sidebar.css';
+import classes from './Sidebar.css';
 import {Link} from 'react-router-dom';
-// import Route from 'react-router-dom/Route';
+
 
 
 
@@ -11,19 +11,17 @@ import {Link} from 'react-router-dom';
       super();
     }
   
-    passSection (x) {
-    this.props.changeContent(x);
-  }
+  
   
  render() {
     
-    return (<div className = "sideBarStyle">
+    return (<div >
             
-            <Link to="/home" style={{ textDecoration: 'none' }}><p onClick = {() => this.passSection("Home")}>Home</ p></Link>
-            <Link to="/users" style={{ textDecoration: 'none' }}><p onClick = {() => this.passSection("Users")}>Users</ p></Link>
-            <Link to="/datasources" style={{ textDecoration: 'none' }}><p onClick = {() => this.passSection("Datasources")}>Datasources</ p></Link>
-            <Link to="/queries" style={{ textDecoration: 'none' }}><p onClick = {() => this.passSection("Queries")}>Queries</ p></Link>
-            <Link to="/dashboards" style={{ textDecoration: 'none' }}><p onClick = {() => this.passSection("Dashboards")}>Dashboards</ p></Link>
+            <Link className = {classes.Link} to="/" >Home</Link>
+            <Link  className = {classes.Link} to="/users">Users</Link>
+            <Link className = {classes.Link}to="/datasources">Datasources</Link>
+            <Link className = {classes.Link}to="/queries" >Queries</Link>
+            <Link className = {classes.Link}to="/dashboards" >Dashboards</Link>
           
           </div>);
  
