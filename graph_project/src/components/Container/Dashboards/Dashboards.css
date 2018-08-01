@@ -1,0 +1,56 @@
+.AddDashDiv {
+    width:90%;
+    margin:0 auto;
+    margin-top:-70px;
+    padding:10px;
+    border:1px solid orange;
+    border-radius:10px;
+    text-align:center;
+}
+
+.Title {
+    margin:0px;
+    padding:0px;
+}
+.Typefields {
+    width:30%;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    font-size:14px;  
+    margin:10px;
+   
+}
+
+
+.LoginButton {
+    
+    width:100px;
+    height:30px;
+    border-radius:3px;
+    border: 1px solid #CCCCCC;
+    background-color:#F5F5F5;
+    color: #CCCCCC;
+    font-size: 20px;
+    margin-top:40px;
+}
+
+.LoginButton:hover {
+
+    color: #5F5F5F;
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+
+
+
+.ResultsDiv {
+    width:90%;
+    margin:0 auto;
+    margin-top:10px;
+    padding:10px;
+    border:1px solid orange;
+    border-radius:10px;
+    text-align:center;
+}
+

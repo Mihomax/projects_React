@@ -2,17 +2,17 @@ import React from 'react';
 import Top from '../Top/Top';
 import Sidebar from '../Sidebar/Sidebar';
 import Aux from '../../hoc/Aux';
-import classes from './Layout.css';
+import  '../../styles/mystyle.css';
 
 const layout = ( props ) => (
     <Aux>
         
             <Top />
         
-        <div className={classes.Layout}>
-            <div className={classes.Sidebar}><Sidebar   /></div>
-            <div className={classes.Main}>
-                
+        <div className='Layout'>
+            <div className='Sidebar'><Sidebar   /></div>
+            <div >
+               
                 {props.children}
             </div>
         </div>

@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import Route from 'react-router-dom/Route';
-import classes from './Container.css';
+import  '../../styles/mystyle.css';
 import Home from './Home/Home';
 import Users from './Users/Users';
 import Datasources from './Datasources/Datasources';
 import Queries from './Queries/Queries';
 import Dashboards from './Dashboards/Dashboards';
-import Config from './Config/Config';
+
 
 class Container extends Component {
   constructor(props) {
@@ -30,13 +30,12 @@ class Container extends Component {
   render() {
             
           return (
-                    <div className={classes.Container}>
+                    <div className='Container'>
                         <Route path="/" exact component={Home}  />
                         <Route path="/users" exact component={Users}  />
                         <Route path="/datasources" exact component={Datasources}  />
                         <Route path="/queries" exact component={Queries}  />
                         <Route path="/dashboards" exact component={Dashboards}  />
-                        <Route path="/config" exact component={Config}  />
                     </div>
                     
                     );

@@ -1,10 +1,24 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Table from '../Dashboards/Table/Table';
+
+
 
   
-  const queries = () => (
-
-        <div>These are queries !</div>
-);
+class Queries extends Component {
   
 
-  export default queries;
+  render() {
+    
+    return (
+    
+        <Table />
+     
+        );
+        }
+              
+}
+
+
+ 
+
+  export default Queries;

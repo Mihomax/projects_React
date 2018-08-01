@@ -1,0 +1,87 @@
+.ConfigDiv {
+    width:70%;
+    float:left;
+    padding:20px;
+    border:1px solid orange;
+    border-radius:10px;
+    text-align:center;
+}
+
+
+.Typefields {
+    width:60%;
+    min-width:150px;
+    height:30px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    font-size:14px;  
+    margin:10px;
+}
+
+
+.LoginButton {
+    
+    width:100px;
+    height:30px;
+    border-radius:3px;
+    border: 1px solid #CCCCCC;
+    background-color:#F5F5F5;
+    color: #CCCCCC;
+    font-size: 20px;
+    margin-top:40px;
+}
+
+.LoginButton:hover {
+
+    color: #5F5F5F;
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+
+.Inline {
+    display: inline;
+}
+
+.CurrDatDiv {
+    width:20%;
+    float:right;
+    
+    margin-bottom:10px;
+    border:1px solid black;
+    border-radius:10px;
+    text-align:center;
+}
+
+.Btn {
+    width:40px;
+    height:20px;
+    border-radius:2px;
+    border: 1px solid white;
+    background-color:black;
+    color: white;
+    font-size: 10px;
+    
+}
+
+.Btn:hover {
+
+    color: black;
+    background-color: red;
+    cursor: pointer;
+}
+
+.Datasources {
+    float:left;
+    padding:5px;
+    border:1px solid orange;
+    border-radius:5px;
+    text-align:center;
+}
+.DatasourcesDiv {
+    float:left;
+    margin-top:-100px;
+    padding:5px;
+    border:1px solid black;
+    border-radius:5px;
+    text-align:center;
+}

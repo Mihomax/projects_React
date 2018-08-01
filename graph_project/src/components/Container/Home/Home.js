@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import classes from './Home.css';
+import  '../../../styles/mystyle.css';
 
   
 class Home extends Component {
@@ -14,10 +14,11 @@ class Home extends Component {
 
   handleSubmit(event) {
     this.setState({value: event.target.value});
+    console.log(this.state);
     let user = document.getElementById('user').value;
     localStorage.setItem('user', user);
     event.preventDefault();
-    window.location.reload()
+    window.location.reload();
   }
 
   render() {
@@ -26,9 +27,9 @@ class Home extends Component {
 
             if (status === null && this.state.value === '')
          { return (<form id = "myForm"  >
-            <input id="user" className = {classes.Typefields}   type="email" name="email" placeholder="Email" /><br />
-            <input className = {classes.Typefields}  type="password" name="password" placeholder="Password" /><br />
-            <input className={classes.LoginButton} onClick={this.handleSubmit} type="submit"  id = "loginButton"   value="Login" />
+            <input id="user" className = 'HomeTypefields'   type="email" name="email" placeholder="Email" /><br />
+            <input className = 'HomeTypefields'  type="password" name="password" placeholder="Password" /><br />
+            <input className='HomeLoginBtn' onClick={this.handleSubmit} type="submit"  id = "loginButton"   value="Login" />
         </form>
         );
         }

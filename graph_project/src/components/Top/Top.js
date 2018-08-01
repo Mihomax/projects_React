@@ -1,8 +1,8 @@
 import React from 'react';
 import dash from './dash.svg';
-import classes from './Top.css';
-import {Link} from 'react-router-dom';
-import conf from '../../images/cog.svg'
+import  '../../styles/mystyle.css';
+
+
 
   
   const top = () => {
@@ -21,11 +21,11 @@ const clearLocal = () => {
     }
     return (
     
-    <div className={classes.TopStyle}>
-            <img className={classes.Left}alt= "Logo" src = {dash} height="45"/> 
+    <div className='TopStyle'>
+            <img className='Left' alt= "Logo" src = {dash} height="45"/> 
             
-            <div style ={style} className={classes.logout} onClick={clearLocal}>Log out</div>
-            <Link to='/config'><img className={classes.images} src={conf} alt=""/></Link>
+            <div style ={style} className='logout' onClick={clearLocal}>Log out</div>
+            
     </div>
     
      );

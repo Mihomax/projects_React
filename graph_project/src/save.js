@@ -1,47 +1,60 @@
 import React, {Component} from 'react';
-import  '../../../styles/mystyle.css';
+import classes from './Datasources.css';
 import Aux from '../../../hoc/Aux';
 
   
 class Datasources extends Component {
-  
-    state = {
-      datasources:[]       
+  constructor(props) {
+    super(props);
+    this.state = {
+      client: '',
+      user:'',
+      password:'',
+      database:'',
+      port:'',
+      host:''          
+  };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    
   }
 
+ 
 
-  handleSubmit= (event) => {
+  handleSubmit(event) {
     event.preventDefault();
-    let newState = {...this.state.datasources};
+    let newState = {...this.state};
     newState.client = this.refs.clients.value;
     newState.user =this.refs.user.value;
     newState.password =this.refs.password.value;
     newState.database =this.refs.database.value;
     newState.port = this.refs.port.value;
     newState.host = this.refs.host.value;  
-    this.setState({datasources:newState});
-
-  }
-
-  componentDidUpdate () {
-    
     let formData = localStorage.getItem('formData');
         
     if (formData == null) {
-          let myArray = [this.state.datasources]
-          localStorage.setItem('formData', JSON.stringify(myArray));
-         }
+          let dataStore = [newState];
+          localStorage.setItem('formData', JSON.stringify(dataStore));
+          console.log(localStorage.getItem('formData'));
+        }
+
     else {
-          
-          let localStorageData = JSON.parse(localStorage.getItem('formData'));
-          localStorageData.push(this.state.datasources);
-          localStorage.setItem('formData', JSON.stringify(localStorageData));
+          let dataStore = JSON.parse(localStorage.getItem('formData'));
+          dataStore.push(newState);
+          localStorage.setItem('formData', JSON.stringify(dataStore));
           console.log(JSON.parse(localStorage.getItem('formData')));
        }
+
        window.location.reload();
+//    this.setState({
+// client:newState.client
+//    });
+//    console.log(this.state);
+    
+   
   }
 
-  deleteDatasource(key) {
+  clearLocalStorage(key) {
     
     let formData = JSON.parse(localStorage.getItem('formData'));
     let index = formData.findIndex(each => each.database === key);
@@ -65,16 +78,16 @@ class Datasources extends Component {
     if (formData !== null) {
      datasourceList = formData.map(eachItem => {
       
-        return (<div key={eachItem.database} className='Datasources' >
+        return (<div key={eachItem.database} className={classes.Datasources} >
                   {eachItem.client} <br/>
-                  <button className = 'Btn' onClick={() => this.deleteDatasource(eachItem.database)}>Delete</button>
+                  <button className = {classes.Btn} onClick={() => this.clearLocalStorage(eachItem.database)}>Delete</button>
                 </div>)
   });
           console.log(datasourceList);
           let index = formData.length - 1;
           
           currentDatasource = (
-            <div className = 'CurrDatDiv'>
+            <div className = {classes.CurrDatDiv}>
               <h3>Your current datasource is</h3>
              <p> Client: {formData[index].client}</p>
              <p> User: {formData[index].user}</p>
@@ -92,18 +105,17 @@ class Datasources extends Component {
   
     return (
       <Aux>
-        
-        <div className='DatasourcesDiv' >
+        <div className={classes.DatasourcesDiv} >
           
       <div>Your datasources<br/><br/>{datasourceList}</div>
       
       </div>
-      {currentDatasource} 
-        <div className='ConfigDiv'>
+      {currentDatasource}
+        <div className={classes.ConfigDiv}>
          <form id = "configForm" onSubmit={this.handleSubmit}  >
 
-          <label  htmlFor="clients">Select your client:</label> 
-         <select className = 'DataTypefields' name="clients" ref="clients">
+          <label className={classes.Lables} htmlFor="clients">Select your client:</label> 
+         <select className = {classes.Typefields} name="clients" ref="clients">
             <option value="pg">pg</option>
             <option value="sqlite">sqlite</option>
             <option value="mysql">mysql</option>
@@ -112,22 +124,22 @@ class Datasources extends Component {
             <option value="mssql">mssql</option>
         </select>
         <br/>
-            <label  htmlFor="user" >User:</label> 
-            <input id="user" className = 'DataTypefields' ref="user"  type="text" name="user" placeholder="User" /><br/>
+            <label className={classes.Lables} htmlFor="user" >User:</label> 
+            <input id="user" className = {classes.Typefields} ref="user"  type="text" name="user" placeholder="User" /><br/>
             
-            <label  htmlFor="password">Password:</label> 
-            <input className = 'DataTypefields'  ref="password" type="password" name="password" placeholder="Password" /><br/>
+            <label className={classes.Lables} htmlFor="password">Password:</label> 
+            <input className = {classes.Typefields}  ref="password" type="password" name="password" placeholder="Password" /><br/>
             
-            <label  htmlFor="database">Database:</label> 
-            <input className = 'DataTypefields' ref="database"  type="text" name="database" placeholder="Database" /><br/>
+            <label className={classes.Lables} htmlFor="database">Database:</label> 
+            <input className = {classes.Typefields} ref="database"  type="text" name="database" placeholder="Database" /><br/>
             
-            <label  htmlFor="port">Port:</label> 
-            <input className = 'DataTypefields' ref="port" type="text" name="port" placeholder="Port" /><br/>
+            <label className={classes.Lables} htmlFor="port">Port:</label> 
+            <input className = {classes.Typefields} ref="port" type="text" name="port" placeholder="Port" /><br/>
             
-            <label  htmlFor="host">Host:</label> 
-            <input className = 'DataTypefields' ref="host"  type="text" name="host" placeholder="Host" /><br/>
+            <label className={classes.Lables} htmlFor="host">Host:</label> 
+            <input className = {classes.Typefields} ref="host"  type="text" name="host" placeholder="Host" /><br/>
 
-            <button className='DataLoginBtn'    value="Submit" >Submit</button>
+            <button className={classes.LoginButton}    value="Submit" >Submit</button>
         </form>
         </div>
         </Aux>
